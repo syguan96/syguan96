@@ -1,0 +1,488 @@
+/* 重置和基础样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 头部信息 */
+.header {
+    margin: 40px 0 60px 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.name {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.affiliation {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.contact-info p {
+    margin-bottom: 5px;
+}
+
+.recruitment-info {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #f8f9fa;
+    border-left: 3px solid #0066cc;
+    border-radius: 4px;
+}
+
+.recruitment-info p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.scholar-link {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.scholar-link:hover {
+    text-decoration: underline;
+}
+
+.profile-image {
+    flex-shrink: 0;
+}
+
+.profile-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+/* 研究介绍 */
+.research-intro {
+    margin-bottom: 60px;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #444;
+}
+
+.research-intro h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #1a1a1a;
+    padding-bottom: 10px;
+}
+
+.research-intro p {
+    margin-bottom: 15px;
+}
+
+.research-intro strong {
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.research-intro a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.research-intro a:hover {
+    text-decoration: underline;
+}
+
+/* Experience */
+.experience {
+    margin-bottom: 60px;
+}
+
+.experience h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #1a1a1a;
+    padding-bottom: 10px;
+}
+
+.experience-item {
+    margin-bottom: 8px;
+}
+
+.experience-item p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 3px;
+}
+
+.experience-item strong {
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+/* Recruitment */
+.recruitment {
+    margin-bottom: 60px;
+    padding: 25px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #0066cc;
+    border-radius: 8px;
+}
+
+.recruitment h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+.recruitment-content {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #444;
+}
+
+.recruitment-content p {
+    margin-bottom: 15px;
+}
+
+.recruitment-content ul {
+    margin: 15px 0 15px 20px;
+}
+
+.recruitment-content li {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.recruitment-content strong {
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.recruitment-content .highlight {
+    color: #0066cc;
+    font-weight: 600;
+}
+
+.recruitment-content .email {
+    color: #d63384;
+    font-weight: 600;
+}
+
+/* Publications */
+.publications {
+    margin-bottom: 60px;
+}
+
+.publications h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #1a1a1a;
+    padding-bottom: 10px;
+}
+
+.publications h2 .legend {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #666;
+    margin-left: 15px;
+}
+
+.publications h2 .legend sup {
+    color: #0066cc;
+    font-weight: 500;
+}
+
+.publication-item {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.publication-item:last-child {
+    border-bottom: none;
+}
+
+.publication-item h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.authors {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.venue {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.venue strong {
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.link {
+    font-size: 0.9rem;
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* Media Coverage */
+.media-coverage {
+    margin-bottom: 60px;
+}
+
+.media-coverage h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #1a1a1a;
+    padding-bottom: 10px;
+}
+
+.media-item {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.media-item:last-child {
+    border-bottom: none;
+}
+
+.media-item h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.media-source {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.media-description {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Media Coverage Content within Publications */
+.media-coverage-content {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #0066cc;
+    border-radius: 4px;
+}
+
+.media-coverage-content h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.media-text {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Talks */
+.talks {
+    margin-bottom: 60px;
+}
+
+.talks h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #1a1a1a;
+    padding-bottom: 10px;
+}
+
+.talk-item {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.talk-item:last-child {
+    border-bottom: none;
+}
+
+.talk-date {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.talk-item h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.talk-venue {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .name {
+        font-size: 2rem;
+    }
+
+    .title {
+        font-size: 1.1rem;
+    }
+
+    .profile-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .publications h2 {
+        font-size: 1.5rem;
+    }
+
+    .publication-item h3 {
+        font-size: 1rem;
+    }
+
+    .links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .name {
+        font-size: 1.8rem;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+
+    .affiliation {
+        font-size: 0.9rem;
+    }
+
+    .contact-info {
+        font-size: 0.9rem;
+    }
+
+    .research-intro {
+        font-size: 0.95rem;
+    }
+
+    .publications h2 {
+        font-size: 1.3rem;
+    }
+
+    .publication-item h3 {
+        font-size: 0.95rem;
+    }
+
+    .authors {
+        font-size: 0.9rem;
+    }
+
+    .venue {
+        font-size: 0.85rem;
+    }
+
+    .link {
+        font-size: 0.85rem;
+    }
+}
