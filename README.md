@@ -1,6 +1,6 @@
 # 官善琰 (Shanyan Guan) - 学术个人主页
 
-一个简洁、专业的学术个人主页，展示在vivo影像规划部AIGC领域的研究工作。基于[王云波教授主页](https://wyb15.github.io/)的简洁风格设计。
+一个简洁、专业的学术个人主页，展示在vivo影像规划部AIGC领域的研究工作。
 
 ## 🌟 特性
 
@@ -18,6 +18,7 @@ personal_page/
 ├── index.html          # 主页面文件
 ├── styles.css          # 样式文件
 ├── script.js           # JavaScript交互功能
+├── photo.jpg           # 个人照片
 └── README.md           # 项目说明文档
 ```
 
@@ -26,8 +27,8 @@ personal_page/
 ### 1. 克隆或下载项目
 
 ```bash
-git clone <your-repository-url>
-cd personal_page
+git clone https://github.com/syguan96/syguan96.git
+cd syguan96
 ```
 
 ### 2. 本地预览
@@ -44,17 +45,23 @@ npx serve .
 # 或使用Live Server扩展（推荐）
 ```
 
-### 3. 自定义内容
+### 3. 访问网站
+
+网站已部署在GitHub Pages上，可以通过以下链接访问：
+- **GitHub Pages**: https://syguan96.github.io/syguan96/
+- **直接访问**: https://syguan96.github.io/
+
+## 🎨 自定义指南
+
+### 修改个人信息
 
 编辑 `index.html` 文件，替换以下内容：
 
 - **个人信息**: 姓名、职位、联系方式
 - **研究介绍**: 根据你的研究背景和当前工作修改
-- **发表论文**: 已包含官善琰的主要论文（来自[原主页](https://syguan96.github.io/)）
-- **个人照片**: 替换占位符图片链接
-- **GitHub链接**: 更新为你的实际GitHub链接
-
-## 🎨 自定义指南
+- **发表论文**: 更新最新的论文列表
+- **个人照片**: 替换 `photo.jpg` 文件
+- **招聘信息**: 更新招聘需求
 
 ### 修改颜色主题
 
@@ -62,28 +69,14 @@ npx serve .
 
 ```css
 /* 主色调 */
-#1f2937  /* 深灰色 */
-#6b7280  /* 中灰色 */
-#3b82f6  /* 蓝色链接 */
+#1a1a1a  /* 深灰色 */
+#666     /* 中灰色 */
+#0066cc  /* 蓝色链接 */
 
 /* 背景色 */
-#f9fafb  /* 浅灰背景 */
+#f8f9fa  /* 浅灰背景 */
 #ffffff  /* 白色背景 */
 ```
-
-### 添加新的章节
-
-1. 在 `index.html` 中添加新的 `<section>` 元素
-2. 在 `styles.css` 中添加对应的样式
-3. 在 `script.js` 中添加导航链接
-
-### 修改样式
-
-所有样式都在 `styles.css` 中定义，你可以：
-
-- 调整字体大小和颜色
-- 修改间距和布局
-- 添加新的样式效果
 
 ## 📱 响应式设计
 
@@ -93,20 +86,9 @@ npx serve .
 - **平板**: 768px - 1199px
 - **手机**: 320px - 767px
 
-## 🌐 部署到GitHub Pages
+## 🌐 部署
 
-### 方法1: 使用GitHub Pages
-
-1. 将代码推送到GitHub仓库
-2. 在仓库设置中启用GitHub Pages
-3. 选择源分支（通常是main或master）
-4. 访问 `https://yourusername.github.io/repository-name`
-
-### 方法2: 使用自定义域名
-
-1. 在仓库根目录添加 `CNAME` 文件
-2. 在文件中写入你的域名
-3. 在域名服务商处配置DNS记录
+网站使用GitHub Pages自动部署，每次推送到main分支后会自动更新。
 
 ## 🔧 技术栈
 
@@ -115,12 +97,15 @@ npx serve .
 - **JavaScript ES6+**: 现代JavaScript特性
 - **Google Fonts**: Inter字体
 
-## 📋 待办事项
+## 📊 GitHub统计
 
-- [ ] 添加暗色主题切换
-- [ ] 集成Google Analytics
-- [ ] 添加多语言支持
-- [ ] 优化图片加载
+![syguan96's github stats](https://github-readme-stats.vercel.app/api?username=syguan96&show_icons=true)
+
+## 📞 联系方式
+
+- **Email**: guanshanyan@vivo.com
+- **GitHub**: [syguan96](https://github.com/syguan96)
+- **Address**: vivo Shanghai R&D Center, Pudong New Area, Shanghai
 
 ## 🤝 贡献
 
@@ -128,38 +113,7 @@ npx serve .
 
 ## 📄 许可证
 
-MIT License - 详见 [LICENSE](LICENSE) 文件
-
-## 📞 支持
-
-如果你在使用过程中遇到问题，请：
-
-1. 查看本文档的常见问题部分
-2. 在GitHub上提交Issue
-3. 联系项目维护者
-
-## 🎯 使用建议
-
-### 内容建议
-
-1. **保持简洁**: 突出最重要的信息
-2. **定期更新**: 及时更新论文和项目信息
-3. **高质量图片**: 使用清晰、专业的个人照片
-4. **联系方式**: 确保所有联系方式都是有效的
-
-### SEO优化
-
-1. 添加适当的meta标签
-2. 使用描述性的alt属性
-3. 优化页面加载速度
-4. 添加结构化数据标记
-
-### 性能优化
-
-1. 压缩CSS和JavaScript文件
-2. 优化图片大小和格式
-3. 使用CDN加速资源加载
-4. 启用浏览器缓存
+MIT License
 
 ---
 
